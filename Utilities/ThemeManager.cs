@@ -118,7 +118,7 @@ namespace MissionPlanner.Utilities
             }
         }
 
-
+        
         public static void doxamlgen()
         {
             List<Control> temp = new List<Control>();
@@ -224,7 +224,7 @@ namespace MissionPlanner.Utilities
                 xaml(ctl);
             }
         }
-
+        
         static object locker = new object();
 
         public static void xaml(Control control)

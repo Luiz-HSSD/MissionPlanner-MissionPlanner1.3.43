@@ -46,7 +46,6 @@ namespace MissionPlanner.GCSViews
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         int selectedrow;
         public bool quickadd;
-        bool isonline = true;
         bool sethome;
         bool polygongridmode;
         Hashtable param = new Hashtable();
@@ -857,7 +856,6 @@ namespace MissionPlanner.GCSViews
             catch (Exception)
             {
                 // here if dns failed
-                isonline = false;
             }
 
             // setup geofence

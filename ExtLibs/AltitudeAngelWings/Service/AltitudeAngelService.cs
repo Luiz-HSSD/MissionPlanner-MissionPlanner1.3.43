@@ -231,7 +231,7 @@ namespace AltitudeAngelWings.Service
                             if (!overlay.LineExists(feature.Id))
                             {
                                 var line = (LineString)feature.Geometry;
-                                List<PointLatLng> coordinates = line.Coordinates.OfType<GeographicPosition>()
+                                List<PointLatLng> coordinates = line.Coordinates.OfType<Position>()
                                                                     .Select(c => new PointLatLng(c.Latitude, c.Longitude))
                                                                     .ToList();
                                 overlay.AddLine(feature.Id, coordinates, new ColorInfo { StrokeColor = 0xFFFF0000 }, feature);
@@ -247,7 +247,7 @@ namespace AltitudeAngelWings.Service
                             {
                                 var poly = (Polygon)feature.Geometry;
                                 List<PointLatLng> coordinates =
-                                    poly.Coordinates[0].Coordinates.OfType<GeographicPosition>()
+                                    poly.Coordinates[0].Coordinates.OfType<Position>()
                                                        .Select(c => new PointLatLng(c.Latitude, c.Longitude))
                                                        .ToList();
 

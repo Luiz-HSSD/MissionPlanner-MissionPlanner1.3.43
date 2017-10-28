@@ -197,9 +197,8 @@ namespace BSE.Windows.Forms
                 (exception is StackOverflowException)) ||
                 ((exception is OutOfMemoryException) ||
                 (exception is System.Threading.ThreadAbortException))) ||
-                ((exception is ExecutionEngineException) ||
                 (exception is IndexOutOfRangeException))) ||
-                (exception is AccessViolationException));
+                (exception is AccessViolationException);
         }
 
         #endregion

@@ -629,7 +629,7 @@ namespace MissionPlanner
                 changelanguage(CultureInfoEx.GetCultureInfo(Settings.Instance["language"]));
             }
 
-            this.Text = splash.Text;
+            Text = splash.Text;
             titlebar = splash.Text;
 
             if (!MONO) // windows only
@@ -2707,10 +2707,6 @@ namespace MissionPlanner
                     Settings.Instance["AACheck"] = true.ToString();
                 }
                 */
-            }
-            catch (TypeInitializationException) // windows xp lacking patch level
-            {
-                CustomMessageBox.Show("Please update your .net version. kb2468871");
             }
             catch (Exception ex)
             {

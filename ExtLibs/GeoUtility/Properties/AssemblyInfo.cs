@@ -61,5 +61,4 @@ using System.Security.Permissions;
 [assembly: AllowPartiallyTrustedCallers()]
 
  //Sonstiges
-[assembly: SecurityPermission(SecurityAction.RequestMinimum, UnmanagedCode = false)]
 #endif

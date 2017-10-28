@@ -884,7 +884,6 @@ namespace MissionPlanner
         }
 
         bool mousedown = false;
-        bool mousedragging = false;
         PointLatLng mousestart = PointLatLng.Empty;
 
         private void map_MouseDown(object sender, MouseEventArgs e)
@@ -896,7 +895,6 @@ namespace MissionPlanner
         private void map_MouseUp(object sender, MouseEventArgs e)
         {
             mousedown = false;
-            mousedragging = false;
 
             domainUpDown1_ValueChanged(null, null);
         }
@@ -907,8 +905,7 @@ namespace MissionPlanner
 
             if (mousedown)
             {
-                mousedragging = true;
-
+                
                 if (currentmode == mode.panmode)
                 {
                     if (e.Button == MouseButtons.Left)
@@ -1035,7 +1032,7 @@ namespace MissionPlanner
                 }
             }
 
-            mousedragging = false;
+            
         }
 
         private void UpdateListFromBox()

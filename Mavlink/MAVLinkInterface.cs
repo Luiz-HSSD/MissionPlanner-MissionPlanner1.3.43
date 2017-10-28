@@ -1466,8 +1466,7 @@ Please check the following
 
         public static void modifyParamForDisplay(bool fromapm, string paramname, ref float value)
         {
-            int planforremoval;
-
+            
             if (paramname.ToUpper().EndsWith("_IMAX") || paramname.ToUpper().EndsWith("ALT_HOLD_RTL") ||
                 paramname.ToUpper().EndsWith("APPROACH_ALT") || paramname.ToUpper().EndsWith("TRIM_ARSPD_CM") ||
                 paramname.ToUpper().EndsWith("MIN_GNDSPD_CM")
