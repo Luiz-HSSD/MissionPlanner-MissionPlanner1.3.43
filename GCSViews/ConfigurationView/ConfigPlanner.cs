@@ -16,6 +16,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
 {
     public partial class ConfigPlanner : UserControl, IActivate
     {
+
         private List<CultureInfo> _languages;
         private bool startup;
 
@@ -177,7 +178,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             startup = false;
         }
 
-        private void BUT_videostart_Click(object sender, EventArgs e)
+        public  void BUT_videostart_Click(object sender, EventArgs e)
         {
             if (MainV2.MONO)
                 return;
@@ -205,7 +206,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             }
         }
 
-        private void BUT_videostop_Click(object sender, EventArgs e)
+        public  void BUT_videostop_Click(object sender, EventArgs e)
         {
             BUT_videostart.Enabled = true;
             if (MainV2.cam != null)

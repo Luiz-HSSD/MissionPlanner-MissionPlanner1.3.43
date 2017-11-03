@@ -99,6 +99,7 @@
             this.CMB_Layout = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_tracklength)).BeginInit();
+            
             this.SuspendLayout();
             // 
             // label33
@@ -725,7 +726,7 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.ComboBox CMB_ratesensors;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.ComboBox CMB_videoresolutions;
+        public System.Windows.Forms.ComboBox CMB_videoresolutions;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.CheckBox CHK_GDIPlus;
         private System.Windows.Forms.Label label24;
@@ -763,10 +764,10 @@
         private System.Windows.Forms.CheckBox CHK_enablespeech;
         private System.Windows.Forms.CheckBox CHK_hudshow;
         private System.Windows.Forms.Label label92;
-        private System.Windows.Forms.ComboBox CMB_videosources;
+        public System.Windows.Forms.ComboBox CMB_videosources;
         private Controls.MyButton BUT_Joystick;
-        private Controls.MyButton BUT_videostop;
-        private Controls.MyButton BUT_videostart;
+        public Controls.MyButton BUT_videostop;
+        public Controls.MyButton BUT_videostart;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox CHK_maprotation;
         private System.Windows.Forms.Label label2;

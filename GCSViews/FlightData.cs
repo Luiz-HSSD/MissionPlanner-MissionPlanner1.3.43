@@ -28,7 +28,8 @@ using Org.BouncyCastle.Asn1.X509.Qualified;
 using WebCamService;
 using ZedGraph;
 using LogAnalyzer = MissionPlanner.Utilities.LogAnalyzer;
-
+using MissionPlanner.GCSViews.ConfigurationView;
+using static MissionPlanner.GCSViews.ConfigurationView.ConfigPlanner;
 // written by michael oborne
 
 namespace MissionPlanner.GCSViews
@@ -4367,5 +4368,6 @@ namespace MissionPlanner.GCSViews
         {
             new Utilities.AltitudeAngel.AASettings().Show(this);
         }
+       
     }
 }
